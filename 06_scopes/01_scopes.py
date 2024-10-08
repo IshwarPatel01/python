@@ -48,7 +48,7 @@ x = 99
 # print(x)
 
 def f1():
-    # x = 88
+    x = 88
     def f2():
         print(x)
     return f2
@@ -57,3 +57,15 @@ myresult = f1()
 myresult()
 
 #closure start from 20mins # bag throry also called 
+
+def chaicoder(num):
+    def actual(x):
+        return x ** num
+    return actual
+
+#yeh hain proper closure
+#py mei isko factory function ke naam se bhi jana jata hain 
+
+
+# ----------------------------------------------
+#  ye hii trick hai programming ke andr ki aapke variable ke andr konsi value hai aur konsa data type hain uska woh samj mei aagaya toh 90% programming samaj aati hai aur fir ye aapke sath chalti har programming ke andr
